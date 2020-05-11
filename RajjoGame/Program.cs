@@ -7,7 +7,7 @@ namespace RajjoGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Do you want to add or substract choose one.....");
+            Console.WriteLine("Do you want to add numbrs or substract numbers");
 
             string choose = Console.ReadLine();
 
