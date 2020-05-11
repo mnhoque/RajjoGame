@@ -14,10 +14,19 @@ namespace RajjoGame
             if (choose == "add" || choose == "+")
             {
                 add();
+            }else if(choose=="subtract"|| choose == "-")
+            {
+                subtract();
             }
             
 
             Console.ReadKey();
+        }
+
+        public static int subtract()
+        {
+            int number = 0;
+            return number;
         }
 
         public static int add()
