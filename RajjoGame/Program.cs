@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 
 namespace RajjoGame
 {
@@ -26,6 +25,34 @@ namespace RajjoGame
         public static int subtract()
         {
             int number = 0;
+            Console.WriteLine("Enter the first number");
+            int bigNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the secound number");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            if (bigNumber > secondNumber)
+            {
+                number = bigNumber - secondNumber;
+
+            }
+            else
+            {
+                Console.WriteLine("{0} number is bigger than {1}",secondNumber,bigNumber);
+                while (secondNumber > bigNumber)
+                {
+                    Console.WriteLine("Enter the second number again");
+                    secondNumber = int.Parse(Console.ReadLine());
+                    if (bigNumber >= secondNumber)
+                    {
+                        number = bigNumber - secondNumber;
+                        Console.WriteLine("The diference between {0} and {1} is {2} .",bigNumber,secondNumber,number);
+                        break;
+                    }
+                }
+            }
+
+            
             return number;
         }
 
