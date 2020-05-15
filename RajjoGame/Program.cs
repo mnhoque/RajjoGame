@@ -52,7 +52,6 @@ namespace RajjoGame
                 }
 
             }
-
             int count = 1;
             int totalsum = 0;
             while (count <= numbers)
@@ -61,13 +60,13 @@ namespace RajjoGame
                 try
                 {
                     int enteredNumber = int.Parse(Console.ReadLine());
-                    totalsum = totalsum + enteredNumber;
-                    count = count + 1;
+                    totalsum =totalsum+enteredNumber;
+                    count ++;
 
                 }
                 catch
                 {
-                    Console.WriteLine("Wrong format. Please enter a integer");
+                    Console.WriteLine("Wrong format. Please enter a valid integer");
                 }
 
             }
