@@ -34,7 +34,7 @@ namespace RajjoGame
             if (bigNumber > secondNumber)
             {
                 number = bigNumber - secondNumber;
-
+                Console.WriteLine("The diference between {0} and {1} is {2} .", bigNumber, secondNumber, number);
             }
             else
             {
